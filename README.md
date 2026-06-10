@@ -1,8 +1,8 @@
-🧮 JavaScript Calculator
+#🧮 JavaScript Calculator
 
 A functional calculator built using HTML, CSS, and Vanilla JavaScript, focused on learning programming logic and state management, an upgrade of the version I made in class https://github.com/alexandre0612/Calculator, I plan to improve both versions, but I going to focus on the one I developed myself.
 
-🚀 Features
+#🚀 Features
 
 
 ✅ Basic operations:
@@ -40,7 +40,7 @@ division by zero
 
 
 
-🧠 Concepts Applied
+#🧠 Concepts Applied
 This project uses core programming concepts:
 
 Style CSS:
@@ -70,3 +70,8 @@ DOM manipulation
 
 
 Separation of concerns (calculate() function)
+
+# 📬 Contact
+LinkedIn: https://www.linkedin.com/in/alexandre-silva-ads/
+GitHub: https://github.com/alexandre0612
+Email: alexandreassuncao5@gmail.com
