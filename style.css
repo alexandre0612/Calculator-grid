@@ -1,99 +1,49 @@
 ﻿body {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: #e7f0f5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
 }
-
 .container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 24px;
+    margin: 0 auto;
+    width: 720px;
+    display: flex;
+    justify-content: center;
 }
 
 .calculator {
-  width: min(340px, 100%);
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 16px;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    margin-top: 40px;
+    border: solid 1px #000;
+    padding: 10px;
+    background-color: #f6fafa;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(64px, 1fr));
-  gap: 10px;
+.grid { 
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    gap: 5px;
+}
+
+.grid button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    width: 70px;
+    height: 50px;
+    border: 1px solid #c7c1c1;
+    border-radius: 5px;
+    background-color: rgb(231, 230, 229);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.grid button:hover {
+    background-color: #c1c4c4;
 }
 
 .result {
-  grid-column: span 4;
-  height: 68px;
-  font-size: 2rem;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 2px solid #b0bac5;
-  text-align: right;
-  background: #f6f8fa;
-  color: #0f172a;
-}
-
-button {
-  border: none;
-  border-radius: 14px;
-  height: 58px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.13s ease, background-color 0.13s ease;
-}
-
-button:hover {
-  transform: translateY(-1px);
-}
-
-button:active {
-  transform: translateY(1px);
-}
-
-button[data-action="number"],
-button[data-action="decimal"] {
-  background: #f1f5f9;
-  color: #111827;
-}
-
-button[data-action="operator"] {
-  background: #1d4ed8;
-  color: #ffffff;
-}
-
-button[data-action="equals"] {
-  background: #0ea5e9;
-  color: #ffffff;
-}
-
-button[data-action="clear"],
-button[data-action="clear-entry"],
-button[data-action="percent"],
-button[data-action="toggle-sign"] {
-  background: #e2e8f0;
-  color: #0f172a;
-}
-
-@media (max-width: 360px) {
-  .calculator {
-    padding: 12px;
-  }
-
-  .result {
-    font-size: 1.65rem;
-    height: 60px;
-  }
-
-  button {
-    height: 52px;
-    font-size: 1.05rem;
-  }
+    font-size: 50px;
+    height: 50px;
+    text-align: right;
+    grid-column: span 4;
+    border: 3px solid #000;
+    border-radius: 7px;
 }
